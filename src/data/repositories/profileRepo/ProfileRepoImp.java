@@ -2,6 +2,7 @@ package data.repositories.profileRepo;
 
 import data.models.Profile;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,6 +18,7 @@ public class ProfileRepoImp implements ProfileRepo{
 
     private Profile saveNewProfile(Profile profile) {
         profile.setId(generateId());
+        profile.setTimeCreated(LocalDateTime.now());
         count++;
         profiles.add(profile);
         return profile;
@@ -54,5 +56,13 @@ public class ProfileRepoImp implements ProfileRepo{
     @Override
     public long count() {
         return count;
+    }
+
+    @Override
+    public Profile findByUsername(String username) {
+        for (var profile: profiles) if (profile.getUsername().equalsIgnoreCase(username)){
+            return profile;
+        }
+        return null;
     }
 }

@@ -1,13 +1,6 @@
-package data.repositories.inboxRepo;
+package data.repositories.mailRepo.inboxRepo;
 
-import data.models.Mail;
-import data.repositories.MailRepo;
+import data.repositories.mailRepo.MailRepo;
 
 public interface InboxRepo extends MailRepo {
-
-    Mail save(Mail mail);
-    Mail findById(int profileId, int id);
-    long countByProfileId(int profileId);
-    long countAll();
-    void deleteById();
 }

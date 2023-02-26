@@ -1,8 +1,8 @@
-package data.repositories.inboxRepo;
+package repositoryTest.inboxRepo;
 
 import data.models.Mail;
 import data.models.Profile;
-import data.repositories.MailRepo;
+import data.repositories.mailRepo.MailRepo;
 import data.repositories.mailRepo.inboxRepo.InboxRepoImp;
 import data.repositories.profileRepo.ProfileRepo;
 import data.repositories.profileRepo.ProfileRepoImp;

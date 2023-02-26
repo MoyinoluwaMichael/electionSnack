@@ -1,9 +1,9 @@
-package repositoryTest.outboxRepo;
+package repositoryTest.sentMailsRepo;
 
 import data.models.Mail;
 import data.models.Profile;
 import data.repositories.mailRepo.MailRepo;
-import data.repositories.mailRepo.outboxRepo.outboxRepoImp;
+import data.repositories.mailRepo.sentEmailsRepo.SentMailsRepoImp;
 import data.repositories.profileRepo.ProfileRepo;
 import data.repositories.profileRepo.ProfileRepoImp;
 import dtos.request.MailRequest;
@@ -13,7 +13,7 @@ import utils.Mapper;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class outboxRepoImpTest {
+class sentMailsRepoImpTest {
     MailRepo outboxRepo;
     Mail mail;
     Profile profile;
@@ -26,7 +26,7 @@ class outboxRepoImpTest {
         profile = new Profile();
         profileRepo = new ProfileRepoImp();
         profileRepo.save(profile);
-        outboxRepo = new outboxRepoImp();
+        outboxRepo = new SentMailsRepoImp();
         MailRequest mailRequest = new MailRequest();
         mailRequest.setSubject("Pressure");
         mailRequest.setBody("Dear Mike, pressure ti wa oo.");

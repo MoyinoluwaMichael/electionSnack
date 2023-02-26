@@ -1,6 +1,8 @@
-package data.repositories;
+package data.repositories.mailRepo;
 
 import data.models.Mail;
+
+import java.util.List;
 
 public interface MailRepo {
     Mail save(Mail mail);
@@ -8,4 +10,6 @@ public interface MailRepo {
     long countByProfileId(int profileId);
     long countAll();
     void deleteById(int profileId, int id);
+
+    List<Mail> findAll(int profileId);
 }

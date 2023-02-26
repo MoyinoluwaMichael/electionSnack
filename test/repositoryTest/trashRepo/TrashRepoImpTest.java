@@ -1,8 +1,9 @@
-package data.repositories.mailRepo.trashRepo;
+package repositoryTest.trashRepo;
 
 import data.models.Mail;
 import data.models.Profile;
-import data.repositories.MailRepo;
+import data.repositories.mailRepo.MailRepo;
+import data.repositories.mailRepo.trashRepo.TrashRepoImp;
 import data.repositories.profileRepo.ProfileRepo;
 import data.repositories.profileRepo.ProfileRepoImp;
 import dtos.request.MailRequest;

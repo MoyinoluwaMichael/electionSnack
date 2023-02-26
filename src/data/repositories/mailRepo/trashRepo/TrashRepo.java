@@ -1,4 +1,6 @@
-package data.repositories.trashRepo;
+package data.repositories.mailRepo.trashRepo;
 
-public interface TrashRepo {
+import data.repositories.mailRepo.MailRepo;
+
+public interface TrashRepo extends MailRepo {
 }

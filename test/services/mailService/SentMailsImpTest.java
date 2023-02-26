@@ -7,9 +7,11 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import utils.Mapper;
 
+import javax.management.InstanceNotFoundException;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class MailServiceImpTest {
+class SentMailsImpTest {
     MailService mailService;
     Mail mail1;
     Mail mail2;
@@ -26,8 +28,8 @@ class MailServiceImpTest {
         mail2 = mailService.sendMail(Mapper.map(mailRequest));
     }
 
-    @DisplayName("Mail can be composedAndSent")
-    @Test void sendOneMail_mailIdIsOneTest(){
+    @DisplayName("Mail can be received")
+    @Test void receiveOneMail_mailIdIsOneTest(){
         assertEquals(1, mail1.getId());
     }
 
@@ -42,23 +44,23 @@ class MailServiceImpTest {
     }
 
     @DisplayName("Mail can be found")
-    @Test void mailCanBeFoundAfterSendingTest(){
+    @Test void mailCanBeFoundAfterSendingTest() throws InstanceNotFoundException {
         assertEquals(mail1, mailService.findFromSentMails(1, 1));
     }
 
     @DisplayName("Mail can be deleted")
-    @Test void sendOneMail_deleteOneSentMail_sentMailsCountIsZero(){
-        mailService.deleteMailById(1,1);
+    @Test void sendOneMail_deleteOneSentMail_sentMailsCountIsZero() throws InstanceNotFoundException {
+        mailService.deleteMailFromSentMailsById(1,1);
         assertEquals(0, mailService.countSentMailsByProfileId(1));
     }
 
-    @Test void sendOneMail_deleteOneSentMail_trashCountIsOne(){
-        mailService.deleteMailById(1,1);
+    @Test void sendOneMail_deleteOneSentMail_trashCountIsOne() throws InstanceNotFoundException {
+        mailService.deleteMailFromSentMailsById(1,1);
         assertEquals(1, mailService.countTrashByProfileId(1));
     }
 
     @Test void
-    sendTwoMailsEachForUserXAndY_deleteOneMailForUserX_outboxCountIsOneForUserXAndTwoForUserY_totalOutboxCountIsThreeTest(){
+    sendTwoMailsEachForUserXAndY_deleteOneMailForUserX_outboxCountIsOneForUserXAndTwoForUserY_totalOutboxCountIsThreeTest() throws InstanceNotFoundException {
         mailRequest.setProfileId(1);
         mailService.sendMail(Mapper.map(mailRequest));
         mailRequest.setProfileId(2);
@@ -67,15 +69,10 @@ class MailServiceImpTest {
         assertEquals(2, mailService.countSentMailsByProfileId(2));
         assertEquals(4, mailService.countAllSentMails());
 
-        mailService.deleteMailById(1, 1);
+        mailService.deleteMailFromSentMailsById(1, 1);
         assertEquals(1, mailService.countSentMailsByProfileId(1));
         assertEquals(2, mailService.countSentMailsByProfileId(2));
         assertEquals(3, mailService.countAllSentMails());
-    }
-
-    @DisplayName("Mail can be received")
-    @Test void receiveOneMail_mailIdIsOneTest(){
-//        assertEquals(1, );
     }
 
 }

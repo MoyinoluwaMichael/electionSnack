@@ -1,7 +1,7 @@
-package data.repositories.mailRepo.outboxRepo;
+package data.repositories.mailRepo.sentEmailsRepo;
 
 import data.repositories.mailRepo.MailRepo;
 
-public interface outboxRepo extends MailRepo {
+public interface SentMailsRepo extends MailRepo {
 
 }

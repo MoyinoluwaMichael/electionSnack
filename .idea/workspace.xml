@@ -1,14 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="925c2fc9-c0d6-4659-bbf4-c5dbb1c3b913" name="Changes" comment="" />
+    <list default="true" id="925c2fc9-c0d6-4659-bbf4-c5dbb1c3b913" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/emailApp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/emailApp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/Mail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Mail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/MailRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/MailRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/inboxRepo/InboxRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/inboxRepo/InboxRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/inboxRepo/InboxRepoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/inboxRepo/InboxRepoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/sentEmailsRepo/SentMailsRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/sentEmailsRepo/SentMailsRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/sentEmailsRepo/SentMailsRepoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/sentEmailsRepo/SentMailsRepoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/trashRepo/TrashRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/trashRepo/TrashRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/mailRepo/trashRepo/TrashRepoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/mailRepo/trashRepo/TrashRepoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/profileRepo/ProfileRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/profileRepo/ProfileRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositories/profileRepo/ProfileRepoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositories/profileRepo/ProfileRepoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/request/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/request/MailRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/request/MailRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/response/LoginResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/response/LoginResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/response/MailResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/response/MailResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/response/RegisterResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/response/RegisterResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mailService/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mailService/MailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/mailService/MailServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/mailService/MailServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/profileService/ProfileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/profileService/ProfileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/profileService/ProfileServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/profileService/ProfileServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Mapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Mapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/controllers/UserControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/controllers/UserControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/repositoryTest/ProfileRepoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/repositoryTest/ProfileRepoImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/repositoryTest/inboxRepo/InboxRepoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/repositoryTest/inboxRepo/InboxRepoImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/repositoryTest/sentMailsRepo/sentMailsRepoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/repositoryTest/sentMailsRepo/sentMailsRepoImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/repositoryTest/trashRepo/TrashRepoImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/repositoryTest/trashRepo/TrashRepoImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/mailService/InboxImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/mailService/InboxImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/mailService/SentMailsImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/mailService/SentMailsImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/mailService/TrashServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/mailService/TrashServiceImpTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/services/profileService/ProfileServiceImpTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/services/profileService/ProfileServiceImpTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2M6xz71lsfZBkBH7W2tmtGdUhjv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -18,11 +69,125 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "create.test.in.the.same.root": "true",
+    "extract.method.default.visibility": "private",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="controllers" />
+      <recent name="services.mailService" />
+      <recent name="services.profileService" />
+      <recent name="data.repositories.mailRepo.trashRepo" />
+      <recent name="data.repositories.mailRepo.sentMailRepo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ProfileServiceImpTest">
+    <configuration name="InboxImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.mailService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services.mailService" />
+      <option name="MAIN_CLASS_NAME" value="services.mailService.InboxImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.profileService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services.profileService" />
+      <option name="MAIN_CLASS_NAME" value="services.profileService.ProfileServiceImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileServiceImpTest.userCanRegisterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.profileService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services.profileService" />
+      <option name="MAIN_CLASS_NAME" value="services.profileService.ProfileServiceImpTest" />
+      <option name="METHOD_NAME" value="userCanRegisterTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SentMailsImpTest,receiveOneMail_mailIdIsOneTest and 6 more" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailApp" />
+      <option name="TEST_OBJECT" value="pattern" />
+      <patterns>
+        <pattern testClass="services.mailService.SentMailsImpTest,receiveOneMail_mailIdIsOneTest" />
+        <pattern testClass="services.mailService.SentMailsImpTest,sendOneMail_userOutboxCountIsOneTest" />
+        <pattern testClass="services.mailService.SentMailsImpTest,sendOneMailEachForUserXAndY_outboxCountIsOneEachForBothUsers_totalOutboxCountIsTwoTest" />
+        <pattern testClass="services.mailService.SentMailsImpTest,mailCanBeFoundAfterSendingTest" />
+        <pattern testClass="services.mailService.SentMailsImpTest,sendOneMail_deleteOneSentMail_sentMailsCountIsZero" />
+        <pattern testClass="services.mailService.SentMailsImpTest,sendOneMail_deleteOneSentMail_trashCountIsOne" />
+        <pattern testClass="services.mailService.SentMailsImpTest,sendTwoMailsEachForUserXAndY_deleteOneMailForUserX_outboxCountIsOneForUserXAndTwoForUserY_totalOutboxCountIsThreeTest" />
+      </patterns>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrashServiceImpTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="emailApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.mailService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services.mailService" />
+      <option name="MAIN_CLASS_NAME" value="services.mailService.TrashServiceImpTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProfileServiceImpTest" />
+        <item itemvalue="JUnit.ProfileServiceImpTest.userCanRegisterTest" />
+        <item itemvalue="JUnit.TrashServiceImpTest" />
+        <item itemvalue="JUnit.SentMailsImpTest,receiveOneMail_mailIdIsOneTest and 6 more" />
+        <item itemvalue="JUnit.InboxImpTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +196,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1677102096652</updated>
+      <workItem from="1677102098210" duration="2523000" />
+      <workItem from="1677140431743" duration="19000" />
+      <workItem from="1677144190022" duration="44441000" />
+      <workItem from="1677241712884" duration="81375000" />
+      <workItem from="1677436068476" duration="9425000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

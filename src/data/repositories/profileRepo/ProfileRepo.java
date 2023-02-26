@@ -10,4 +10,6 @@ public interface ProfileRepo{
     Profile findAll();
     void deleteById(int id);
     long count();
+
+    Profile findByUsername(String username);
 }

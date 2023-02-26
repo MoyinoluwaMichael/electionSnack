@@ -1,13 +1,14 @@
-package data.repositories.mailRepo.outboxRepo;
+package data.repositories.mailRepo.sentEmailsRepo;
 
 import data.models.Mail;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class outboxRepoImp implements outboxRepo {
+public class SentMailsRepoImp implements SentMailsRepo {
 
-    private List<Mail> outbox = new ArrayList<>();
+    private List<Mail> sentMails = new ArrayList<>();
     private int count;
     @Override
     public Mail save(Mail mail) {
@@ -18,7 +19,8 @@ public class outboxRepoImp implements outboxRepo {
 
     private Mail saveNewMail(Mail mail) {
         mail.setId(generateId(mail));
-        outbox.add(mail);
+        mail.setTimeCreated(LocalDateTime.now());
+        sentMails.add(mail);
         count++;
         return mail;
     }
@@ -28,9 +30,7 @@ public class outboxRepoImp implements outboxRepo {
 
     @Override
     public Mail findById(int profileId, int id) {
-        for (var mail: outbox) {
-            System.out.println(mail.getProfileId());
-            System.out.println(mail.getId());
+        for (var mail: sentMails) {
             if (mail.getProfileId() == profileId && mail.getId() == id) return mail;
         }
         return null;
@@ -39,7 +39,7 @@ public class outboxRepoImp implements outboxRepo {
     @Override
     public long countByProfileId(int profileId) {
         long outboxCount = 0;
-        for (var mail : outbox) if (mail.getProfileId() == profileId) outboxCount++;
+        for (var mail : sentMails) if (mail.getProfileId() == profileId) outboxCount++;
         return outboxCount;
     }
 
@@ -50,10 +50,17 @@ public class outboxRepoImp implements outboxRepo {
 
     @Override
     public void deleteById(int profileId, int id) {
-        for (var mail : outbox) if (mail.getProfileId() == profileId && mail.getId() == id){
+        for (var mail : sentMails) if (mail.getProfileId() == profileId && mail.getId() == id){
             count--;
-            outbox.remove(mail);
+            sentMails.remove(mail);
             return;
         }
+    }
+
+    @Override
+    public List<Mail> findAll(int profileId) {
+        List<Mail> userSentMails = new ArrayList<>();
+        for (var mail : sentMails) if (mail.getProfileId() == profileId) userSentMails.add(mail);
+        return sentMails;
     }
 }

@@ -16,6 +16,9 @@ import utils.Mapper;
 
 import javax.management.InstanceNotFoundException;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserControllerTest {
@@ -25,6 +28,8 @@ class UserControllerTest {
     RegisterResponse response;
     MailRequest mailRequest;
     MailResponse mailResponse;
+    String date;
+    String time;
 
     @BeforeEach void startWith() throws InstanceNotFoundException {
         profileService = new ProfileServiceImp();
@@ -46,6 +51,11 @@ class UserControllerTest {
         registerRequest.setUsername("Adesam@regnos.com");
         response = userController.registerUSer(registerRequest);
         mailResponse = userController.sendMail(mailRequest);
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+        date = DateTimeFormatter.ofPattern("dd/M/yyyy").format(localDateTime.toLocalDate());
+        time = DateTimeFormatter.ofPattern("H:mm").format(localDateTime.toLocalTime());
+
     }
 
     @Test void userCanRegisterTest(){
@@ -100,9 +110,10 @@ class UserControllerTest {
     }
 
     @Test void mailCanBeViewedTest(){
-        String expected = """
+
+        String expected = String.format("""
                 ============================================
-                Date: 26/2/2023            Time: 20:53
+                Date: %s            Time: %s
                 ============================================
                 From: moyinoluwamichael@regnos.com
                 To: Adesam@regnos.com
@@ -111,7 +122,7 @@ class UserControllerTest {
                 ============================================
                 Vote Peter Obi
                 ============================================
-                """;
+                """,date, time+" " );
         assertEquals(expected, userController.findInboxByProfileId(2).get(0).toString());
     }
 
@@ -132,7 +143,7 @@ class UserControllerTest {
     }
 
     @Test void userCanViewProfile() throws InstanceNotFoundException {
-        String expected = """
+        String expected = String.format("""
                 *****************************************
                             REGNOS EMAIL
                 *****************************************
@@ -140,9 +151,9 @@ class UserControllerTest {
                 Name: Moyinoluwa Michael
                 Date of Birth: 17/11/1999
                 Username: moyinoluwamichael@regnos.com
-                Created on: 26/2/2023 20:53
+                Created on: %s %s
                 *****************************************
-                """;
+                """, date, time);
         assertEquals(expected, userController.findProfileByUsername("moyinoluwamichael@regnos.com").toString());
     }
 }
